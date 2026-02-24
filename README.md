@@ -1,1 +1,10 @@
 # temperature_measure
+import random
+import time
+
+max = int(input("Enter max temp: "))
+min = int(input("Enter min temp: "))
+
+for i in range(1,6):
+  print("Reading ",i,":",float(random.randint(min,max)), "k")
+  time.sleep(2)
